@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.casestudy_group1_cs2b.RideController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="163.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="10.0">
+                     <image>
+                        <Image url="@images/hg-text.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10;" text="Home" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-background-radius: 10;" text="Rides" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10;" text="Promos" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="ticketsBtn" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10;" text="Tickets" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="aboutBtn" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10;" text="About" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="317.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="75.0">
+               <image>
+                  <Image url="@images/hh-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="1620.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="90.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="loginBtn1" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5);" text="Login" translateX="-20.0">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signupBtn1" layoutX="62.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5);" text="Sign up" translateX="-20.0">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="MainContent" prefHeight="990.0" prefWidth="100.0">
+               <children>
+                  <VBox fx:id="RidesWrapper" alignment="CENTER" prefHeight="480.0" prefWidth="100.0">
+                     <children>
+                        <VBox fx:id="RidesSection" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="990.0" style="-fx-background-color: rgb(220, 220, 220);">
+                           <children>
+                              <HBox fx:id="RidesHeader" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="ridesHeading" prefHeight="67.0" prefWidth="1278.0" style="-fx-text-fill: rgb(67, 56, 120);" text="RIDES">
+                                       <font>
+                                          <Font name="System Bold" size="45.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="RidesCarousel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="RideCard" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/ferris-wheel.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="nameLabel" prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Ferris Wheel">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="priceLabel" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="119.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱250" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="bookBtn" mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/roller-coaster.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Roller Coaster">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" prefWidth="66.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱250" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="RideCard2" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/carousel.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="nameLabel2" prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Carousel">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="priceLabel2" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="85.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱150" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="bookBtn2" mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="PromosWrapper" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="480.0" prefWidth="100.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="990.0" style="-fx-background-color: rgb(220, 220, 220);">
+                           <children>
+                              <HBox fx:id="PromosCarousel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                              <HBox fx:id="RidesCarousel1" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="RideCard1" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/bump-car.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Bump Cars">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="53.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱200" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="RideCard11" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/fun-slide.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="nameLabel11" prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Fun Slide">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="priceLabel11" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="58.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱200" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="bookBtn11" mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="RideCard21" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="412.0">
+                                       <children>
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5)dropshadow(gaussian, rgba(0,0,0,0.50), 30, 0, 5, 5);">
+                                             <image>
+                                                <Image url="@images/drop-tower.png" />
+                                             </image></ImageView>
+                                          <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="nameLabel21" prefWidth="194.0" style="-fx-text-fill: rgb(67, 56, 120);" text="Drop Tower">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="priceLabel21" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="60.0" style="-fx-text-fill: rgb(67, 56, 120);" text="₱200" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="bookBtn21" mnemonicParsing="false" onAction="#getLabelText" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 20; -fx-text-fill: rgb(67, 56, 120);" text="BOOK NOW" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

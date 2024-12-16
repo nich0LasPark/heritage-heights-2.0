@@ -1,1 +1,1 @@
-# heritage-heights-2.0
+# heritage-heights

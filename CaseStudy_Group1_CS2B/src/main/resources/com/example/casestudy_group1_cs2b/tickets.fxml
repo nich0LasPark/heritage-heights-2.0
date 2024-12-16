@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.casestudy_group1_cs2b.TicketsController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="163.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="10.0">
+                     <image>
+                        <Image url="@images/hg-text.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: white;" text="Home" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: white;" text="Rides" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: white;" text="Promos" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="ticketsBtn" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(126, 96, 191); -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: white;" text="Tickets" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="aboutBtn" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: white;" text="About" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="317.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="75.0">
+               <image>
+                  <Image url="@images/hh-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="1620.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="90.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-family: arial; -fx-font-size: 18;" text="Login" translateX="-20.0">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signupBtn" layoutX="62.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-family: arial; -fx-font-size: 18;" text="Sign up" translateX="-20.0">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <VBox fx:id="MainContent" prefHeight="990.0" prefWidth="1300.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="300.0">
+                           <children>
+                              <Label style="-fx-text-fill: rgb(67, 56, 120);" text="WELCOME TO HERITAGE HEIGHTS">
+                                 <font>
+                                    <Font name="Arial Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countdownLabel" layoutX="729.0" layoutY="52.0" style="-fx-text-fill: rgb(67, 56, 120);" text="You only have X minutes left">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="368.0" prefWidth="527.0" spacing="16.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: rgb(67, 56, 120);" text="Buyer Details">
+                                             <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="FIRST NAME:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="firstnameField" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="LAST NAME:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="lastnameField" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="AGE:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="ageField" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="281.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="EMAIL ADDRESS:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="emailField" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="301.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="CONTACT NO:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField fx:id="contactnoField" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="368.0" prefWidth="527.0" spacing="16.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: rgb(67, 56, 120);" text="Order Information">
+                                             <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="ORDER NAME:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <TextField fx:id="ordernameTextfield" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="DATE/TIME:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <DatePicker fx:id="dateField" prefWidth="125.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0" style="-fx-text-fill: rgb(67, 56, 120);">
+                                             <children>
+                                                <Label text="LOCATION:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <TextField editable="false" text="Bataan" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="281.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="QUANTITY:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <TextField fx:id="quantityField" prefWidth="200.0" text="1" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="368.0" prefWidth="527.0" spacing="16.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: rgb(67, 56, 120);" text="Payment Details">
+                                             <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="TOTAL AMOUNT">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="100.0">
+                                             <children>
+                                                <TextField fx:id="amountField" editable="false" text="15" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="Mode of Payment:">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <ComboBox fx:id="mopComboBox" prefWidth="125.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="100.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="290.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefWidth="125.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#handleActionButton" prefHeight="45.0" prefWidth="125.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 5, 0, 5, 5); -fx-background-radius: 30; -fx-text-fill: rgb(67, 56, 120); -fx-font-weight: bold;" text="Cancel" />
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="211.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <Button fx:id="submitButton" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="45.0" prefWidth="125.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 5, 0, 5, 5); -fx-background-radius: 30; -fx-text-fill: rgb(67, 56, 120); -fx-font-weight: bold;" text="Submit" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="368.0" prefWidth="527.0" spacing="16.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: rgb(67, 56, 120);" text="Customize your order">
+                                             <font>
+                                                <Font name="Arial Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefWidth="125.0" style="-fx-text-fill: rgb(67, 56, 120);">
+                                             <children>
+                                                <Label text="CHOOSE TITLE">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <ComboBox fx:id="rideComboBox" prefWidth="150.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="281.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="125.0">
+                                             <children>
+                                                <Label style="-fx-text-fill: rgb(67, 56, 120);" text="QUANTITY">
+                                                   <font>
+                                                      <Font name="Arial" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <TextField fx:id="newQty" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefWidth="125.0" />
+                                          <VBox alignment="CENTER" layoutX="211.0" layoutY="10.0" prefWidth="125.0">
+                                             <children>
+                                                <Button fx:id="addOrderBtn" mnemonicParsing="false" onAction="#handleAddOrderButton" prefHeight="45.0" prefWidth="125.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 5, 0, 5, 5); -fx-background-radius: 30; -fx-text-fill: rgb(67, 56, 120); -fx-font-weight: bold;" text="Add " />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="990.0" prefWidth="634.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="67.0" prefWidth="122.0" style="-fx-font-weight: bold; -fx-text-fill: rgb(67, 56, 120);" text="Order Lists">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </padding>
+                        </HBox>
+                        <VBox fx:id="OrderVBox" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

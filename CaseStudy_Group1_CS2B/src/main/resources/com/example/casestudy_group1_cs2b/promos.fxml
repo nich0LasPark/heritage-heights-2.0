@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.casestudy_group1_cs2b.PromoController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="163.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="10.0">
+                     <image>
+                        <Image url="@images/hg-text.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Home" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Rides" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Promos" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="ticketsBtn" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Tickets" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="aboutBtn" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="90.0" prefWidth="300.0" style="-fx-background-color: rgb(67, 56, 120); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="About" translateX="20.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" right="2.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="317.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="75.0">
+               <image>
+                  <Image url="@images/hh-logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="1620.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="90.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5); -fx-font-family: arial; -fx-font-size: 17; -fx-font-weight: bold;" text="Login" translateX="-20.0">
+                           <font>
+                              <Font name="Arial" size="9.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signupBtn" layoutX="62.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: rgb(126, 96, 191); -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 20, 0, 5, 5); -fx-font-family: arial; -fx-font-size: 17; -fx-font-weight: bold;" text="Sign up" translateX="-20.0">
+                           <font>
+                              <Font name="Arial" size="9.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="MainContent" prefHeight="990.0" prefWidth="100.0">
+               <children>
+                  <VBox fx:id="RidesWrapper" alignment="CENTER" prefHeight="480.0" prefWidth="100.0">
+                     <children>
+                        <VBox fx:id="RidesSection" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="990.0" style="-fx-background-color: rgb(220, 220, 220);">
+                           <children>
+                              <HBox fx:id="RidesHeader" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="ridesHeading" prefHeight="67.0" prefWidth="1278.0" style="-fx-font-weight: bold; -fx-text-fill: rgb(67, 56, 120);" text="PROMOS">
+                                       <font>
+                                          <Font size="45.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="RidesCarousel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="PromoCard" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="412.0">
+                                       <children>
+                                          <VBox prefHeight="288.0" prefWidth="388.0">
+                                             <children>
+                                                <Label fx:id="nameLabel11" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="189.0" prefWidth="372.0" style="-fx-font-family: elephant; -fx-text-fill: rgb(67, 56, 120); -fx-font-size: 60;" text="₱1100">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="56.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="nameLabel1" prefHeight="60.0" prefWidth="388.0" text="Rides All You Want">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel1" layoutX="10.0" layoutY="150.0" prefHeight="60.0" prefWidth="388.0" text="Unlimited Rides">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel2" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="388.0" text="1 person or more">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel3" layoutX="10.0" layoutY="247.0" prefHeight="60.0" prefWidth="388.0" text="Enjoy 12% discount">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="8.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Button mnemonicParsing="false" onAction="#getPromoData" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 24;" text="BUY NOW">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="PromoCard1" alignment="CENTER" layoutX="574.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="412.0">
+                                       <children>
+                                          <VBox prefHeight="288.0" prefWidth="388.0">
+                                             <children>
+                                                <Label fx:id="nameLabel111" alignment="CENTER" prefHeight="189.0" prefWidth="372.0" style="-fx-font-family: elephant; -fx-text-fill: rgb(67, 56, 120); -fx-font-size: 60;" text="₱875">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="56.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="nameLabel12" prefHeight="60.0" prefWidth="388.0" text="Holiday Special">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel11" layoutX="10.0" layoutY="150.0" prefHeight="60.0" prefWidth="388.0" text="Unlimited Rides">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel21" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="388.0" text="For Family (per member of the family)">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel31" layoutX="10.0" layoutY="247.0" prefHeight="60.0" prefWidth="388.0" text="Enjoy 30% discount">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="8.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Button mnemonicParsing="false" onAction="#getPromoData" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 24;" text="BUY NOW">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="PromoCard11" alignment="CENTER" layoutX="780.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="412.0">
+                                       <children>
+                                          <VBox prefHeight="288.0" prefWidth="388.0">
+                                             <children>
+                                                <Label fx:id="nameLabel112" alignment="CENTER" prefHeight="189.0" prefWidth="372.0" style="-fx-font-family: elephant; -fx-text-fill: rgb(67, 56, 120); -fx-font-size: 60;" text="₱1050">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="56.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="nameLabel121" prefHeight="60.0" prefWidth="388.0" text="Barkada Bonding">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel111" layoutX="10.0" layoutY="150.0" prefHeight="60.0" prefWidth="388.0" text="6 Rides">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel211" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="388.0" text="3 person or more">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel311" layoutX="10.0" layoutY="247.0" prefHeight="60.0" prefWidth="388.0" text="Enjoy 16% discount">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="8.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Button mnemonicParsing="false" onAction="#getPromoData" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 24;" text="BUY NOW">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="PromosWrapper" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="480.0" prefWidth="100.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="990.0" style="-fx-background-color: rgb(220, 220, 220);">
+                           <children>
+                              <HBox fx:id="PromosCarousel" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                              <HBox fx:id="RidesCarousel1" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox fx:id="PromoCard2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="412.0">
+                                       <children>
+                                          <VBox prefHeight="288.0" prefWidth="388.0">
+                                             <children>
+                                                <Label fx:id="nameLabel113" alignment="CENTER" prefHeight="189.0" prefWidth="372.0" style="-fx-font-family: elephant; -fx-text-fill: rgb(67, 56, 120); -fx-font-size: 60;" text="₱1175">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="56.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="nameLabel13" prefHeight="60.0" prefWidth="388.0" text="Couple Goals">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel12" layoutX="10.0" layoutY="150.0" prefHeight="60.0" prefWidth="388.0" text="6 Rides">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel22" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="388.0" text="2 person (2 per person)">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel32" layoutX="10.0" layoutY="247.0" prefHeight="60.0" prefWidth="388.0" text="Enjoy 6% discount">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="8.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Button mnemonicParsing="false" onAction="#getPromoData" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 24;" text="BUY NOW">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="PromoCard21" alignment="CENTER" layoutX="574.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="412.0">
+                                       <children>
+                                          <VBox prefHeight="288.0" prefWidth="388.0">
+                                             <children>
+                                                <Label fx:id="nameLabel114" alignment="CENTER" prefHeight="189.0" prefWidth="372.0" style="-fx-font-family: elephant; -fx-text-fill: rgb(67, 56, 120); -fx-font-size: 60;" text="₱1000">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="56.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="nameLabel131" prefHeight="60.0" prefWidth="388.0" text="Weekend Adventure">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel121" layoutX="10.0" layoutY="150.0" prefHeight="60.0" prefWidth="388.0" text="6 Rides">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel221" layoutX="10.0" layoutY="210.0" prefHeight="60.0" prefWidth="388.0" text="3 person or more (per person)">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="detailLabel321" layoutX="10.0" layoutY="247.0" prefHeight="60.0" prefWidth="388.0" text="Enjoy 20% discount">
+                                                   <font>
+                                                      <Font name="Arial" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="8.0" right="8.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Button mnemonicParsing="false" onAction="#getPromoData" prefHeight="40.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.50), 10, 0.5, 5, 5); -fx-background-radius: 30; -fx-border-radius: 30; -fx-font-weight: bold; -fx-font-size: 24;" text="BUY NOW">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="14.0" left="12.0" right="12.0" top="14.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
